@@ -1,3 +1,4 @@
+# action.yml
 name: "myCustomAction"
 description: "PoC for creating my first github action"
 runs:
