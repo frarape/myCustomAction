@@ -2,10 +2,7 @@
 FROM alpine:3.10
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY build/helloword.linux /helloword
-
-# Give execution permissions
-RUN chmod +x entrypoint.sh
+COPY --chmod=0755 build/helloword.linux ./helloword
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/helloword"]
+ENTRYPOINT ["./helloword"]
