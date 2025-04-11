@@ -1,0 +1,11 @@
+name: Test myCustomAction Workflow
+
+on: [push]
+
+jobs:
+  main:
+    name: Main job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute myCustomAction
+        uses: actions/myCustomAction@main
