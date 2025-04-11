@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Execute myCustomAction
-        uses: actions/myCustomAction@main
+        uses: ./
