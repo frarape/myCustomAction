@@ -7,8 +7,8 @@ jobs:
     name: Main job
     runs-on: ubuntu-latest
     steps:
-      - name: Show FS
-        run: ls -la
-        
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Execute myCustomAction
         uses: ./
