@@ -1,6 +1,14 @@
 # action.yml
 name: "myCustomAction"
 description: "PoC for creating my first github action"
+inputs:
+  message:
+    required: true
+  who:
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
+  args:
+    - ${{ inputs.who }}
+    - ${{ inputs.message }}

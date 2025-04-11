@@ -12,3 +12,6 @@ jobs:
 
       - name: Execute myCustomAction
         uses: ./
+        with:
+          who: Paco
+          message: hola a todos
