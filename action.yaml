@@ -1,0 +1,5 @@
+name: "myCustomAction"
+description: "PoC for creating my first github action"
+runs:
+  using: "docker"
+  image: "Dockerfile"
